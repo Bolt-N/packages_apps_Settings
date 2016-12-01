@@ -162,7 +162,7 @@
 
     <!-- Advanced data tile -->
     <string name="quicksettings_tiles_category">Плитки быстрых настроек</string>
-    <string name="qs_advanced_data_title">Мобильные данные</string>
+    <string name="qs_advanced_data_title">Плитка Мобильные данные</string>
     <string name="qs_advanced_data_summary">Включение или выключение мобильных данных одиночным нажатием на плитку</string>
 
     <!-- QuickSettings haptic feedback -->
@@ -170,7 +170,7 @@
     <string name="quick_settings_vibrate_summary">Вибрировать при касании по плитке</string>
 
     <!-- Button settings  -->
-    <string name="qs_wifi_easy_toggle_title">Переключатель WiFi</string>
+    <string name="qs_wifi_easy_toggle_title">Плитка WiFi</string>
     <string name="qs_wifi_easy_toggle_summary">Включение или выключение WiFi одиночным нажатием на плитку</string>
 
     <!-- Name of special SystemUI debug settings -->
@@ -280,8 +280,8 @@
     <string name="reset">Сбросить</string>
 
     <!-- Lockscreen torch -->
-    <string name="keyguard_torch_title">Фонарик на экране блокировки</string>
-    <string name="keyguard_torch_summary">Длительное нажатие при выкл. экране на кнопку питания включит фонарик</string>
+    <string name="keyguard_torch_title">Фонарик</string>
+    <string name="keyguard_torch_summary">Удерживание кнопки питания при выключенном экране включает фонарик</string>
 
 
     <!-- Snackbar action button -->
@@ -412,7 +412,7 @@
     <string name="restart_systemui">Перезапустить SystemUI</string> 
      
     <!-- Advanced bluetooth tile -->
-    <string name="qs_advanced_bluetooth_title">Bluetooth</string>
+    <string name="qs_advanced_bluetooth_title">Плитка Bluetooth</string>
     <string name="qs_advanced_bluetooth_summary">Включение или выключение Bluetooth одиночным нажатием на плитку</string>
      
     <string name="dashboard_conditions_title">Уведомления в главном меню</string>
