@@ -431,4 +431,8 @@
  
     <string name="brightness_icon_title">Значок яркости</string>
     <string name="brightness_icon_summary">Значок слева от слайдера яркости регулирует автоматическую подстройку яркости</string>
+     
+    <!-- fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Вибрация при аутентификации</string>
+    <string name="fprint_sucess_vib_summary">Вибрировать при успешном сканировании отпечатков пальцев</string>
 </resources>
