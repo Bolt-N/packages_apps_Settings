@@ -19,10 +19,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.android.settings.simpleaosp.StatusBarSettings;
+import com.android.settings.simpleaosp.WeatherSettings;
+import com.android.settings.simpleaosp.SystemUISettings;
+import com.android.settings.simpleaosp.AnimationSettings;
+import com.android.settings.simpleaosp.RecentsSettings;
 import com.android.settings.simpleaosp.NavigationBarSettings;
 import com.android.settings.simpleaosp.LockScreenSettings;
 import com.android.settings.simpleaosp.NotificationDrawerSettings;
-import com.android.settings.simpleaosp.VolumeRockerSettings;
+import com.android.settings.simpleaosp.ButtonSettings;
 import com.android.settings.simpleaosp.PagerSlidingTabStrip;
 import com.android.settings.R;
 import com.android.settings.dashboard.SummaryLoader;
@@ -84,11 +88,15 @@ public class AdditionalSettings extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-	    frags[0] = new StatusBarSettings();
-            frags[1] = new NavigationBarSettings();
-	    frags[2] = new NotificationDrawerSettings(); 
-            frags[3] = new LockScreenSettings();
-            frags[4] = new VolumeRockerSettings(); 
+            frags[0] = new AnimationSettings();
+            frags[1] = new ButtonSettings();
+            frags[2] = new LockScreenSettings();
+            frags[3] = new NavigationBarSettings();
+	        frags[4] = new NotificationDrawerSettings(); 
+            frags[5] = new RecentsSettings(); 
+	        frags[6] = new StatusBarSettings();
+            frags[7] = new SystemUISettings(); 
+            frags[8] = new WeatherSettings(); 
         }
 
         @Override
@@ -110,11 +118,16 @@ public class AdditionalSettings extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-		    getString(R.string.status_bar_title),
-                    getString(R.string.navigation_bar_title),
-                    getString(R.string.notification_drawer_title),
-		    getString(R.string.lock_screen_title),
-                    getString(R.string.volume_rocker_title)};
+                    getString(R.string.animation_title),
+			        getString(R.string.volume_rocker_title),
+	             	getString(R.string.lock_screen_title),
+	             	getString(R.string.navigation_bar_title),	
+	             	getString(R.string.notification_drawer_title),
+	             	getString(R.string.recents_title),
+	            	getString(R.string.status_bar_title),
+                    getString(R.string.systemui_title),
+                    getString(R.string.weather_title)};        
+		    
         return titleString;
     }
 

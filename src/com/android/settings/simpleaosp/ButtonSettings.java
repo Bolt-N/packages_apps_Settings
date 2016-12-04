@@ -22,7 +22,7 @@ import java.util.ArrayList;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
-public class VolumeRockerSettings extends SettingsPreferenceFragment implements
+public class ButtonSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener, Indexable {
 
     // volume cursor control
@@ -34,7 +34,7 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.volume_rocker_settings);
+        addPreferencesFromResource(R.xml.button_settings);
 
         // volume cursor control
 	mVolumeKeyCursorControl = (ListPreference) findPreference(VOLUME_KEY_CURSOR_CONTROL);
@@ -74,7 +74,7 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.volume_rocker_settings;
+                    sir.xmlResId = R.xml.button_settings;
                     result.add(sir);
 
                     return result;

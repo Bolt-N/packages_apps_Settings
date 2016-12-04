@@ -227,7 +227,7 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private static final int REQUEST_SUGGESTION = 42;
 
-    private static final String SUPERSU_FRAGMENT = "com.android.settings.SuperSU";
+    private static final String SUPERUSER_FRAGMENT = "com.android.settings.SuperUser";
 
     private String mFragmentClass;
 
@@ -1012,10 +1012,11 @@ public class SettingsActivity extends SettingsDrawerActivity
      */
     private Fragment switchToFragment(String fragmentName, Bundle args, boolean validate,
             boolean addToBackStack, int titleResId, CharSequence title, boolean withTransition) {
-        if (SUPERSU_FRAGMENT.equals(fragmentName)) {
-            Intent superSUIntent = new Intent();
-            superSUIntent.setClassName("eu.chainfire.supersu", "eu.chainfire.supersu.MainActivity");
-            startActivity(superSUIntent);
+        if (SUPERUSER_FRAGMENT.equals(fragmentName)) {
+            Intent superuserIntent = new Intent();
+            superuserIntent.setClassName("me.phh.superuser", "com.koushikdutta.superuser.MainActivity");
+            startActivity(superuserIntent);
+
             finish();
             return null;
         }
@@ -1110,15 +1111,15 @@ public class SettingsActivity extends SettingsDrawerActivity
                         Settings.DevelopmentSettingsActivity.class.getName()),
                 showDev, isAdmin, pm);
 
-        // Embedding into Settings is supported from SuperSU v1.85 and up
-        boolean suSupported = false;
+        // SuperUser
+        boolean phhSupported = false;
         try {
-            suSupported = (getPackageManager().getPackageInfo("eu.chainfire.supersu", 0).versionCode >= 185);
+            phhSupported = (getPackageManager().getPackageInfo("me.phh.superuser", 0).versionCode > 0);
         } catch (PackageManager.NameNotFoundException e) {
         }
         setTileEnabled(new ComponentName(packageName,
-                        Settings.SuperSUActivity.class.getName()),
-                suSupported, isAdmin, pm);
+                        Settings.SuperUserActivity.class.getName()),
+                phhSupported, isAdmin, pm);
 
         // Reveal development-only quick settings tiles
         DevelopmentTiles.setTilesEnabled(this, showDev);

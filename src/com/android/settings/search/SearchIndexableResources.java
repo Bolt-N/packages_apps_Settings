@@ -58,7 +58,7 @@ import com.android.settings.simpleaosp.StatusBarSettings;
 import com.android.settings.simpleaosp.NavigationBarSettings;
 import com.android.settings.simpleaosp.LockScreenSettings;
 import com.android.settings.simpleaosp.NotificationDrawerSettings;
-import com.android.settings.simpleaosp.VolumeRockerSettings;
+import com.android.settings.simpleaosp.ButtonSettings;
 import com.android.settings.simpleaosp.BatteryIcons;
 import com.android.settings.simpleaosp.CarrierLabelSettings;
 import com.android.settings.simpleaosp.HeadsUpSettings;
@@ -400,11 +400,11 @@ public final class SearchIndexableResources {
                         StatusbarClock.class.getName(),
                         R.drawable.ic_build_tweak));
 
-        sResMap.put(VolumeRockerSettings.class.getName(),
+        sResMap.put(ButtonSettings.class.getName(),
                 new SearchIndexableResource(
-                        Ranking.getRankForClassName(VolumeRockerSettings.class.getName()),
+                        Ranking.getRankForClassName(ButtonSettings.class.getName()),
                         NO_DATA_RES_ID,
-                        VolumeRockerSettings.class.getName(),
+                        ButtonSettings.class.getName(),
                         R.drawable.ic_build_tweak));
 
     }

@@ -14,8 +14,38 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- SimpleAOSP build date-->
-    <string name="build_date">SimpleAOSP-N build date</string>
+
+    <!-- About phone screen, Bolt-OS version name-->
+    <string name="mod_version">Bolt-OS version</string>
+    <!-- About phone screen, Bolt-OS unknown name-->
+    <string name="mod_version_default">Unknown</string>
+    <!-- About phone screen, build date of ROM -->
+    <string name="build_date">Build date</string>
+    <string name="build_date_default">2012-01-01-0000</string>
+    <!--  About device screen, Hardware info -->
+    <string name="hardware_info">Hardware info</string>
+    <!--  About device Screen, hardware info, rear camera -->
+    <string name="device_rear_camera">Rear camera</string>
+    <!--  About device Screen, hardware info, front camera -->
+    <string name="device_front_camera">Front facing camera</string>
+    <!--  About device Screen, hardware info, screen res -->
+    <string name="device_screen_resolution">Screen resolution</string>
+    <!--  About device Screen, hardware info, GPU info -->
+    <string name="gpu_info">GPU</string>
+    <!-- About device screen, Cpu info. -->
+    <string name="cpu_info">CPU</string>
+    <!-- About device screen, Chipset info -->
+    <string name="chipset_info">Chipset</string>
+    <!-- About phone screen, Free memory info -->
+	
+    <string name="mem_info">Memory</string>
+    <!-- Vendor version -->
+    <string name="vendor_version">Vendor version</string>
+    <string name="vendor_version_default">Unknown</string>
+
+    <!-- Bolt-Os build date-->
+    <string name="build_date">Bolt-Os build date</string>
+   <string name="header_category_simpleaosp">User Interface</string>
     <string name="build_date_default">2014-01-01-0000</string> 
     <!-- Vendor version -->
     <string name="vendor_version">Vendor version</string>
@@ -44,8 +74,8 @@
     <string name="volbtn_music_controls_summary">When screen off, long-pressing the volume rockers will seek music tracks</string>
 
     <!-- Saosp Settings menus -->
-    <string name="simpleaosp_settings_title">Build Tweaks</string>
-    <string name="keywords_simpleaosp">simpleaosp</string>
+    <string name="simpleaosp_settings_title">Bolt-Os</string>
+    <string name="keywords_simpleaosp">User Interface</string>
     <!-- Lock screen settings -->
     <string name="lock_screen_title">Lock screen</string>
     <!-- Status bar-->
@@ -135,7 +165,7 @@
     <string name="expanded_desktop_title">Expanded desktop options</string>
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
-    <string name="supersu_title">SuperSU</string>
+    <string name="superuser_title">SuperUser</string>
 
     <!-- Double tap gesture anywhere on the lock screen put device to sleep -->
     <string name="double_tap_sleep_anywhere_title">Double-tap to sleep anywhere</string>
@@ -308,7 +338,7 @@
     <string name="show_dev_already_cm">No need, you have already enabled development settings.</string>
 
      <!-- volumerocker fragment -->
-     <string name="volume_rocker_title">Volume rocker</string>
+     <string name="volume_rocker_title">Buttons</string>
 
      <!-- volumerocker media stream control -->
     <string name="volume_keys_control_media_stream_title">Controls media volume</string>
@@ -439,5 +469,17 @@
     <!-- fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
     <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+
+    <!--Animation category -->
+    <string name="animation_title">Animations</string>
+
+    <!--Recents category -->
+    <string name="recents_title">Recents</string>
+
+    <!--SystemUI category -->
+    <string name="systemui_title">SystemUI</string>
+
+    <!--Weather category -->
+    <string name="weather_title">Weather</string>
 
 </resources>
