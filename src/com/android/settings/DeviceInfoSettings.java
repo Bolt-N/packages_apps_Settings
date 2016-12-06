@@ -313,6 +313,13 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 Utils.showSnackbar(message, Snackbar.SnackbarDuration.LENGTH_LONG,
                         label, intent, getActivity());
             }
+        } else if (preference.getKey().equals(KEY_SECURITY_PATCH)) {
+            if (getPackageManager().queryIntentActivities(preference.getIntent(), 0).isEmpty()) {
+                // Don't send out the intent to stop crash
+                Log.w(LOG_TAG, "Stop click action on " + KEY_SECURITY_PATCH + ": "
+                        + "queryIntentActivities() returns empty" );
+                return true;
+            }
         } else if (preference.getKey().equals(KEY_DEVICE_FEEDBACK)) {
             sendFeedback();
         } else if (prefKey.equals(KEY_KERNEL_VERSION)) {
