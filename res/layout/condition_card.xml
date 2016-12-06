@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2016 The Android Open Source Project
-
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
           http://www.apache.org/licenses/LICENSE-2.0
-
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -25,12 +22,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-<<<<<<< HEAD
         android:paddingStart="16dp"
         android:background="@color/condition_card_background_color"
-=======
-        android:background="?android:attr/colorAccent"
->>>>>>> android-7.1.1_r4
         android:elevation="2dp"
         android:clickable="true"
         android:focusable="true">
@@ -64,14 +57,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:padding="16dp"
-<<<<<<< HEAD
                 android:tint="@color/condition_card_expander_color"
                 android:clickable="true"
                 android:focusable="true"
                 android:background="?android:attr/selectableItemBackground" />
-=======
-                android:tint="?android:attr/textColorPrimaryInverse"/>
->>>>>>> android-7.1.1_r4
 
         </LinearLayout>
 
@@ -118,12 +107,8 @@
                     android:layout_weight="1"
                     android:paddingStart="0dp"
                     android:alpha=".8"
-<<<<<<< HEAD
                     android:textColor="@color/condition_card_first_button_text_color"
-=======
                     android:textAlignment="viewStart"
-                    android:textColor="?android:attr/textColorPrimaryInverse"
->>>>>>> android-7.1.1_r4
                     style="?android:attr/buttonBarButtonStyle" />
 
                 <Button
@@ -132,12 +117,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:alpha=".8"
-<<<<<<< HEAD
                     android:textColor="@color/condition_card_second_button_text_color"
-=======
                     android:textAlignment="viewStart"
-                    android:textColor="?android:attr/textColorPrimaryInverse"
->>>>>>> android-7.1.1_r4
                     style="?android:attr/buttonBarButtonStyle" />
 
             </com.android.internal.widget.ButtonBarLayout>

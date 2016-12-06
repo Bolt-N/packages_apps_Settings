@@ -7842,8 +7842,6 @@
 
     <string name="automatic_storage_manager_freed_bytes"><xliff:g id="size" example="3.25MB">%1$s</xliff:g> total made available\n\nLast ran on <xliff:g id="date" example="Jan 12">%2$s</xliff:g></string>
 
-<<<<<<< HEAD
-=======
     <!-- Title text for enabling web actions. [CHAR_LIMIT=60] -->
     <string name="web_action_enable_title">Open links in apps</string>
 
@@ -7859,5 +7857,4 @@
 
     <!-- Warning when activating the automatic storage manager on legacy devices. [CHAR LIMIT=NONE] -->
     <string name="automatic_storage_manager_activation_warning">Your storage is now being managed by the storage manager</string>
->>>>>>> android-7.1.1_r4
 </resources>

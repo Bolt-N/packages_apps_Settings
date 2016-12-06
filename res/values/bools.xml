@@ -43,12 +43,9 @@
     <!-- Whether none security option is hide or not  (country specific). -->
     <bool name="config_hide_none_security_option">false</bool>
 
-<<<<<<< HEAD
     <!--Whether the storage manager exists. -->
     <bool name="config_has_storage_manager">true</bool>
 
-=======
->>>>>>> android-7.1.1_r4
     <!--Whether help links are defined. -->
     <bool name="config_has_help">false</bool>
 </resources>

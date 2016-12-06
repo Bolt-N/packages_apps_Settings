@@ -364,12 +364,9 @@ public class SettingsActivity extends SettingsDrawerActivity
             WifiInfo.class.getName(),
             MasterClear.class.getName(),
             NightDisplaySettings.class.getName(),
-<<<<<<< HEAD
-            AdditionalSettings.class.getName()
-=======
+            AdditionalSettings.class.getName(),
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName()
->>>>>>> android-7.1.1_r4
     };
 
 

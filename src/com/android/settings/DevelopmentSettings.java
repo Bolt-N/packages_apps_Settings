@@ -51,11 +51,11 @@ import android.os.ServiceManager;
 import android.os.StrictMode;
 import android.os.SystemProperties;
 import android.os.UserHandle;
+import android.service.persistentdata.PersistentDataBlockManager;
 import android.os.UserManager;
 import android.os.storage.IMountService;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
-import android.service.persistentdata.PersistentDataBlockManager;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
@@ -66,12 +66,8 @@ import android.support.v7.preference.PreferenceScreen;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Log;
-import android.view.IWindowManager;
-<<<<<<< HEAD
-=======
-import android.view.LayoutInflater;
 import android.view.ThreadedRenderer;
->>>>>>> android-7.1.1_r4
+import android.view.IWindowManager;
 import android.view.View;
 import android.view.accessibility.AccessibilityManager;
 import android.webkit.IWebViewUpdateService;
@@ -147,6 +143,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private static final String DISABLE_OVERLAYS_KEY = "disable_overlays";
     private static final String SIMULATE_COLOR_SPACE = "simulate_color_space";
     private static final String USB_AUDIO_KEY = "usb_audio";
+    private static final String SHOW_CPU_USAGE_KEY = "show_cpu_usage";
     private static final String FORCE_HARDWARE_UI_KEY = "force_hw_ui";
     private static final String FORCE_MSAA_KEY = "force_msaa";
     private static final String TRACK_FRAME_TIME_KEY = "track_frame_time";
@@ -1644,55 +1641,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             }
         }
         updateLogpersistValues();
-    }
-
-<<<<<<< HEAD
-    private void updateCpuUsageOptions() {
-        updateSwitchPreference(mShowCpuUsage,
-                Settings.Global.getInt(getActivity().getContentResolver(),
-                        Settings.Global.SHOW_PROCESSES, 0) != 0);
-    }
-
-    private void writeCpuUsageOptions() {
-        boolean value = mShowCpuUsage.isChecked();
-        Settings.Global.putInt(getActivity().getContentResolver(),
-                Settings.Global.SHOW_PROCESSES, value ? 1 : 0);
-        Intent service = (new Intent())
-                .setClassName("com.android.systemui", "com.android.systemui.LoadAverageService");
-        if (value) {
-            getActivity().startService(service);
-        } else {
-            getActivity().stopService(service);
-=======
-    private void updateUsbConfigurationValues() {
-        if (mUsbConfiguration != null) {
-            UsbManager manager = (UsbManager) getSystemService(Context.USB_SERVICE);
-
-            String[] values = getResources().getStringArray(R.array.usb_configuration_values);
-            String[] titles = getResources().getStringArray(R.array.usb_configuration_titles);
-            int index = 0;
-            for (int i = 0; i < titles.length; i++) {
-                if (manager.isFunctionEnabled(values[i])) {
-                    index = i;
-                    break;
-                }
-            }
-            mUsbConfiguration.setValue(values[index]);
-            mUsbConfiguration.setSummary(titles[index]);
-            mUsbConfiguration.setOnPreferenceChangeListener(this);
-        }
-    }
-
-    private void writeUsbConfigurationOption(Object newValue) {
-        UsbManager manager = (UsbManager)getActivity().getSystemService(Context.USB_SERVICE);
-        String function = newValue.toString();
-        manager.setCurrentFunction(function);
-        if (function.equals("none")) {
-            manager.setUsbDataUnlocked(false);
-        } else {
-            manager.setUsbDataUnlocked(true);
->>>>>>> android-7.1.1_r4
-        }
     }
 
     private void writeImmediatelyDestroyActivitiesOptions() {

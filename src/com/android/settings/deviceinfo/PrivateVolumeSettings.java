@@ -93,13 +93,10 @@ public class PrivateVolumeSettings extends SettingsPreferenceFragment {
 
     private static final String AUTHORITY_MEDIA = "com.android.providers.media.documents";
 
-<<<<<<< HEAD
     private static final String STORAGE_MANAGER_PROPERTY = "ro.storage_manager.enabled";
 
     public static final int MENU_ADVANCED = Menu.FIRST;
 
-=======
->>>>>>> android-7.1.1_r4
     private static final int[] ITEMS_NO_SHOW_SHARED = new int[] {
             R.string.storage_detail_apps,
             R.string.storage_detail_system,
