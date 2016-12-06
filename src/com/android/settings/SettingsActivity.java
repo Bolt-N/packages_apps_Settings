@@ -229,6 +229,7 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private static final String SUPERUSER_FRAGMENT = "com.android.settings.SuperUser";
 
+
     private String mFragmentClass;
 
     private CharSequence mInitialTitle;
@@ -1016,10 +1017,9 @@ public class SettingsActivity extends SettingsDrawerActivity
             Intent superuserIntent = new Intent();
             superuserIntent.setClassName("me.phh.superuser", "com.koushikdutta.superuser.MainActivity");
             startActivity(superuserIntent);
-
             finish();
             return null;
-        }
+       }
 
         if (validate && !isValidFragment(fragmentName)) {
             throw new IllegalArgumentException("Invalid fragment for this activity: "

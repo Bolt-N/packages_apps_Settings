@@ -189,7 +189,7 @@
 
         <activity android:name="Settings$SaospSettingsActivity"
                 android:label="@string/simpleaosp_settings_title"
-                android:icon="@drawable/ic_build_tweak"
+                android:icon="@drawable/ic_xd_bolt"
                 android:taskAffinity="">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1010,26 +1010,26 @@
         </activity-alias>
 
         <activity android:name="Settings$SuperUserActivity"
-             android:label="@string/superuser_title"
-             android:icon="@drawable/ic_settings_superuser"
-             android:taskAffinity="">
-             <intent-filter>
-                 <action android:name="android.intent.action.MAIN" />
-                 <category android:name="android.intent.category.DEFAULT" />
-                 <category android:name="android.intent.category.VOICE_LAUNCH" />
+            android:label="@string/supersu_title"
+            android:icon="@drawable/ic_settings_supersu"
+            android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
                 <category android:name="com.android.settings.SHORTCUT" />
             </intent-filter>
-             <intent-filter android:priority="2">
-                 <action android:name="com.android.settings.action.SETTINGS" />
-             </intent-filter>
-             <meta-data android:name="com.android.settings.category"
-                 android:value="com.android.settings.category.custom" />
-             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                 android:value="com.android.settings.SuperUser" />
-             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
-                 android:value="true" />
-         </activity>
- 
+            <intent-filter android:priority="2">
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.system" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.SuperUser" />
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                android:value="true" />
+        </activity>
+
 
         <activity android:name="Settings$NightDisplaySettingsActivity"
                 android:label="@string/night_display_title"
@@ -1049,6 +1049,7 @@
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
         </activity>
+
 
         <activity android:name="Settings$DeviceInfoSettingsActivity"
                 android:theme="@style/Theme.SubSettingsDialogWhenLarge"

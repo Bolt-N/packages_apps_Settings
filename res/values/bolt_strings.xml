@@ -165,7 +165,7 @@
     <string name="expanded_desktop_title">Expanded desktop options</string>
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
-    <string name="superuser_title">SuperUser</string>
+    <string name="supersu_title">SuperUser</string>
 
     <!-- Double tap gesture anywhere on the lock screen put device to sleep -->
     <string name="double_tap_sleep_anywhere_title">Double-tap to sleep anywhere</string>
@@ -348,7 +348,7 @@
     <string name="block_on_secure_keyguard_title">Disable quick settings on lock screen</string>
     <string name="block_on_secure_keyguard_summary">Disables quick settings on secure lockscreen</string>
 
-    <string name="build_tweaks_summary_title">Customize your device</string>
+    <string name="build_tweaks_summary_title">Customize the Os</string>
 
     <!-- Advanced storage settings -->
     <string name="storage_advanced_titlebar">Advanced Storage</string>
