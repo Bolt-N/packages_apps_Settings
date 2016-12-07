@@ -46,5 +46,13 @@
         android:summary="@string/network_traffic_summary"
         android:fragment="com.android.settings.simpleaosp.NetworkTraffic" />
 
+    <PreferenceScreen
+        android:title="@string/statusbar_items_title"
+        android:summary="@string/statusbar_items_summary" >
+    <intent android:action="android.intent.action.MAIN"
+        android:targetPackage="com.android.systemui"
+        android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
+    </PreferenceScreen>
+
 </PreferenceScreen>
 
