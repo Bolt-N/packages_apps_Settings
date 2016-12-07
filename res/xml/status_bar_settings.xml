@@ -10,6 +10,12 @@
         android:title="@string/status_bar_battery_title"
     	android:summary="@string/status_bar_battery_summary" />
 
+    <PreferenceScreen
+            android:fragment="com.android.settings.simpleaosp.CarrierLabelSettings"
+            android:key="pure_carrier_label_settings"
+            android:title="@string/carrier_label_settings_title"
+            android:summary="@string/carrier_label_settings_summary" />
+
     <Preference
         android:key="statusbarclock"
         android:fragment="com.android.settings.simpleaosp.StatusbarClock"
