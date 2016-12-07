@@ -16,13 +16,24 @@ import com.android.settings.SettingsPreferenceFragment;
 public class SystemUISettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-		// private variables here
+    private static final String KEY_HEADS_UP_SETTINGS = "heads_up_settings";
+
+    private PreferenceScreen mHeadsUp;
 		
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.systemui_settings);
+        PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mHeadsUp = (PreferenceScreen) findPreference(KEY_HEADS_UP_SETTINGS);
+    }
+
+     private boolean getUserHeadsUpState() {
+         return Settings.Global.getInt(getContentResolver(),
+                Settings.Global.HEADS_UP_NOTIFICATIONS_ENABLED,
+                Settings.Global.HEADS_UP_ON) != 0;
     }
 
     @Override
@@ -35,5 +46,13 @@ public class SystemUISettings extends SettingsPreferenceFragment implements
     @Override
     protected int getMetricsCategory() {
         return MetricsEvent.BOLT;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        mHeadsUp.setSummary(getUserHeadsUpState()
+                ? R.string.summary_heads_up_enabled : R.string.summary_heads_up_disabled);
     }
 }

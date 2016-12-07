@@ -22,10 +22,6 @@ import java.util.ArrayList;
 
 public class StatusBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener, Indexable {
-
-    private static final String KEY_HEADS_UP_SETTINGS = "heads_up_settings";
-
-    private PreferenceScreen mHeadsUp;
 		
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -33,14 +29,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.status_bar_settings);
         PreferenceScreen prefScreen = getPreferenceScreen();
-
-        mHeadsUp = (PreferenceScreen) findPreference(KEY_HEADS_UP_SETTINGS);
-    }
-
-    private boolean getUserHeadsUpState() {
-         return Settings.System.getInt(getContentResolver(),
-                Settings.System.HEADS_UP_USER_ENABLED,
-                Settings.System.HEADS_UP_USER_ON) != 0;
     }
 
     @Override
@@ -53,14 +41,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     @Override
     protected int getMetricsCategory() {
         return MetricsEvent.SAOSP_TWEAKS;
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-
-        mHeadsUp.setSummary(getUserHeadsUpState()
-                ? R.string.summary_heads_up_enabled : R.string.summary_heads_up_disabled);
     }
 
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
