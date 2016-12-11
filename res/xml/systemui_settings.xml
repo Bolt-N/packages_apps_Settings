@@ -20,12 +20,6 @@
             android:title="@string/omni_notification_light_settings"
             android:fragment="com.android.settings.batterylight.NotificationLightSettings" />
 
-<com.android.settings.preference.SystemSettingSwitchPreference
-        android:key="three_finger_gesture"
-        android:title="@string/three_finger_gesture"
-        android:summary="@string/three_finger_gesture_summary"
-        android:defaultValue="false" />
-
     <PreferenceScreen
         android:key="heads_up_settings"
         android:title="@string/headsup_settings_title"

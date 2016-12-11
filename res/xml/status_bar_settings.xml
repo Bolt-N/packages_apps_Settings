@@ -5,6 +5,12 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceScreen
+        android:fragment="com.android.settings.simpleaosp.BatterySettings"
+        android:key="battery_style_pref"
+        android:title="@string/status_bar_battery_title"
+    	android:summary="@string/status_bar_battery_summary" />
+
+    <PreferenceScreen
             android:fragment="com.android.settings.simpleaosp.CarrierLabelSettings"
             android:key="pure_carrier_label_settings"
             android:title="@string/carrier_label_settings_title"
@@ -15,12 +21,6 @@
         android:fragment="com.android.settings.simpleaosp.StatusbarClock"
         android:title="@string/status_bar_clock" 
         android:summary="@string/status_bar_clock_summary"/>
-
-    <PreferenceScreen
-        android:fragment="com.android.settings.simpleaosp.BatterySettings"
-        android:key="battery_style_pref"
-        android:title="@string/status_bar_battery_title"
-    	android:summary="@string/status_bar_battery_summary" />
 
     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
         android:key="status_bar_brightness_control"

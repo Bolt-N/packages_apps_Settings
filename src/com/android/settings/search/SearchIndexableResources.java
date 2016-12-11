@@ -59,7 +59,7 @@ import com.android.settings.simpleaosp.NavigationBarSettings;
 import com.android.settings.simpleaosp.LockScreenSettings;
 import com.android.settings.simpleaosp.NotificationDrawerSettings;
 import com.android.settings.simpleaosp.ButtonSettings;
-import com.android.settings.simpleaosp.BatteryIcons;
+import com.android.settings.simpleaosp.BatterySettings;
 import com.android.settings.simpleaosp.CarrierLabelSettings;
 import com.android.settings.simpleaosp.HeadsUpSettings;
 import com.android.settings.simpleaosp.NetworkTraffic;
@@ -330,11 +330,11 @@ public final class SearchIndexableResources {
                         ZenModeVisualInterruptionSettings.class.getName(),
                         R.drawable.ic_settings_notifications));
 
-        sResMap.put(BatteryIcons.class.getName(),
+        sResMap.put(BatterySettings.class.getName(),
                 new SearchIndexableResource(
-                        Ranking.getRankForClassName(BatteryIcons.class.getName()),
+                        Ranking.getRankForClassName(BatterySettings.class.getName()),
                         NO_DATA_RES_ID,
-                        BatteryIcons.class.getName(),
+                        BatterySettings.class.getName(),
                         R.drawable.ic_build_tweak));
 
         sResMap.put(CarrierLabelSettings.class.getName(),
