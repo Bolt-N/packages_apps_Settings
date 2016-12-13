@@ -78,6 +78,8 @@
 
     <!-- Saosp Settings menus -->
     <string name="simpleaosp_settings_title">Bolt-Os</string>
+    <string name="kerneladiutor_title">Kernel</string>
+    <string name="dashboard_summary_kerneladiutor">Set options for the kernel</string>
     <string name="keywords_simpleaosp">User Interface</string>
     <!-- Lock screen settings -->
     <string name="lock_screen_title">Lock screen</string>
@@ -193,8 +195,8 @@
     <string name="network_traffic_autohide">Auto hide</string>
     <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
     <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
-    <string name="network_traffic_hidearrow_title">Hide arrows</string>
-    <string name="network_traffic_hidearrow_summary">Hide the traffic monitor activity arrows</string>
+    <string name="network_traffic_hidearrow">Hide arrows</string>
+    <string name="network_traffic_hidearrow_summary">Hide the network traffic indicator arrows</string>
 
     <!-- statusbar brightness control -->
     <string name="status_bar_toggle_brightness">Brightness control</string>
@@ -407,6 +409,8 @@
     <string name="navigation_bar_title">Navigation bar</string>
     <string name="navbar_tuner_title">Edit navigation bar</string>
     <string name="navbar_tuner_summary">Edit the navigation bar through the tuner</string>
+    <string name="double_tap_sleep_nav_bar_title">Tap navbar to sleep</string>
+    <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
 
     <!-- Navigation bar cursor -->
     <string name="navigation_bar_arrow_keys_title">Show arrow keys while typing</string>
